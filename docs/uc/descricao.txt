@@ -1,0 +1,1 @@
+Diretório destinado aos arquivos relacionados aos Casos de Uso do projeto.
