@@ -1,0 +1,67 @@
+/* Parâmetros */
+:root {
+    --cor-primaria: #303F9F;
+    --cor-fundo: #EEF0F2;
+}
+html {
+    background-color: #EEF0F2;
+}
+body {
+    background-color: #EEF0F2 !important;
+}
+.font-branco {
+    color: #fff !important;
+}
+.caixa {
+    background-color: #fff;
+    border: solid 1px rgba(51, 51, 51, 0.281);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 10px 20px 10px;
+}
+#align-icon {
+    vertical-align: middle;
+}
+/* INICIO */
+.titulo-inicio {
+    font-weight: 600;
+    color: #333;
+}
+/* MENU */
+#menu {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--cor-primaria);
+}
+
+.campo-menu {
+    border: solid 1px rgba(51, 51, 51, 0.281);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    width: 150px;
+    height: 150px;
+}
+.icone-menu {
+    text-align: center;
+    margin-top: 20%;
+}
+.size-icone-menu {
+    font-size: 44px !important;
+}
+.titulo-menu {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+.link-menu {
+    text-decoration: none;
+    color: #333;
+}
+.link-menu:hover {
+    text-decoration: none;
+}
+.link-menu, .campo-menu:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+    box-shadow: 0px 0px 0px;
+}
