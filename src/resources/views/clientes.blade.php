@@ -2,17 +2,27 @@
 @section('content')
 
 <div class="container">
+    <div class="titulo-pagina">{{ $titulo }}</div>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <div class="caixa">
         <div class="row">
             <div class="col-sm-1">
-                <button type="button" class="btn btn-info">Novo</button>
+                <a href="{{ route('clientes.create') }}"><button type="button" class="btn btn-info">Novo</button></a>
             </div>
             <div class="col-sm-11">
-                <input type="text" class="form-control" id="pesquisar" placeholder="Pesquisar">
+                <input type="text" class="form-control pesquisar" id="pesquisar" placeholder="Pesquisar">
             </div>
         </div>
         <hr>
-        <table class="table">
+        <table class="table" id="tabela">
         <thead>
             <tr>
             <th scope="col">Nome</th>
@@ -23,16 +33,35 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($clientes as $cliente)
             <tr>
-                <th scope="row">Bruno Carlos de Mesquita Naves</th>
-                <td>085.105.316-50</td>
-                <td><button type="button" class="btn btn-success btn-sm">Ver</button></td>
-                <td><button type="button" class="btn btn-primary btn-sm">Editar</button></td>
-                <td><button type="button" class="btn btn-danger btn-sm">Excluir</button></td>
+                <th scope="row">{{ $cliente->nome }}</th>
+                <td>{{ $cliente->cpf }}</td>
+                <td><a href="{{ route('clientes.show', $cliente->id) }}"><button type="button" class="btn btn-success btn-sm">Ver</button></td></a>
+                <td><a href="{{ route('clientes.edit', $cliente->id) }}"><button type="button" class="btn btn-primary btn-sm">Editar</button></td></a>
+                <td>
+                    <form action="{{ route('clientes.destroy', $cliente->id) }}" method="post">
+                        <input type="hidden" name="_method" value="DELETE">
+                        @csrf
+                        <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                    </form>
+                </td>
             </tr>
+            @endforeach
         </tbody>
         </table>
     </div>
 </div>
+
+<script>
+$(document).ready(function () {
+    $("#pesquisar").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#tabela tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+</script>
 
 @endsection
