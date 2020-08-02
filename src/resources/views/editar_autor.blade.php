@@ -33,7 +33,7 @@
                 <div class="col-sm-8">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Data de Nascimento</label>
-                        <input type="text" class="form-control" id="data_nascimento" name="data_nascimento" value="{{ $dados->data_nascimento }}">
+                        <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" value="{{ $dados->data_nascimento }}">
                     </div>
                 </div>
             </div>

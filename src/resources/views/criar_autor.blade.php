@@ -32,7 +32,7 @@
                 <div class="col-sm-8">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Data de nascimento</label>
-                        <input type="text" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="00/00/0000">
+                        <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="00/00/0000">
                     </div>
                 </div>
             </div>

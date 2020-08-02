@@ -15,7 +15,7 @@
         <div class="label">Nome</div>
         <div class="detalhe">{{ $dados->nome }}</div>
         <hr>
-        <div class="label">CPF</div>
+        <div class="label">Data de Nascimento</div>
         <div class="detalhe">{{ $dados->data_nascimento }}</div>
         <hr>
     </div>
