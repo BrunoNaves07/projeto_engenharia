@@ -23,3 +23,6 @@ Route::resource('/clientes', 'ClienteController');
 
 // ROTA DE AUTORES
 Route::resource('/autores', 'AutorController');
+
+// ROTA DE EDITORAS
+Route::resource('/editoras', 'EditoraController');

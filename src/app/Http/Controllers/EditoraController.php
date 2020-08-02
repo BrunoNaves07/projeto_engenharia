@@ -51,7 +51,7 @@ class EditoraController extends Controller
         //dd($request);
         $dados = [
             'nome'       => $request->nome,
-            'cpf'        => $request->cpf,
+            'cnpj'       => $request->cnpj,
             'logradouro' => $request->logradouro,
             'numero'     => $request->numero,
             'bairro'     => $request->bairro,
@@ -60,6 +60,7 @@ class EditoraController extends Controller
             'estado'     => $request->estado,
             'telefone'   => $request->telefone,
             'email'      => $request->email,
+            'site'       => $request->site,
         ];
 
         $insert = $this->editora->create($dados);
@@ -109,7 +110,7 @@ class EditoraController extends Controller
     {
         $dados = [
             'nome'       => $request->nome,
-            'cpf'        => $request->cpf,
+            'cnpj'       => $request->cnpj,
             'logradouro' => $request->logradouro,
             'numero'     => $request->numero,
             'bairro'     => $request->bairro,
@@ -118,6 +119,7 @@ class EditoraController extends Controller
             'estado'     => $request->estado,
             'telefone'   => $request->telefone,
             'email'      => $request->email,
+            'site'       => $request->site,
         ];
 
         $find = $this->editora->find($id);

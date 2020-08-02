@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col">
-                <a class="link-menu" href="#">
+                <a class="link-menu" href="{{ url('/editoras') }}">
                     <div class="campo-menu">
                         <div class="icone-menu"><span class="material-icons size-icone-menu" id="align-icon">apartment</span></div>
                         <div class="titulo-menu">Editoras</div>
