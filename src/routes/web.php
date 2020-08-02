@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 // ROTA DE CLIENTES
 Route::resource('/clientes', 'ClienteController');
+
+// ROTA DE AUTORES
+Route::resource('/autores', 'AutorController');

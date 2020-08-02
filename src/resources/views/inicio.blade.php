@@ -46,7 +46,7 @@
                 </a>
             </div>
             <div class="col">
-                <a class="link-menu" href="#">
+                <a class="link-menu" href="{{ url('/autores') }}">
                     <div class="campo-menu">
                         <div class="icone-menu"><span class="material-icons size-icone-menu" id="align-icon">cast_for_education</span></div>
                         <div class="titulo-menu">Autores</div>
