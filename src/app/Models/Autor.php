@@ -12,4 +12,12 @@ class Autor extends Model
         'nome',
         'data_nascimento',
     ];
+
+    /**
+     * Relacionamento de autor com livros.
+     */
+    public function livros()
+    {
+        return $this->hasMany('App\Models\Livro');
+    }
 }

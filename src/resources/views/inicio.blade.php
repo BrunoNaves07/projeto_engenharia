@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="col">
-                <a class="link-menu" href="#">
+                <a class="link-menu" href="{{ url('/livros') }}">
                     <div class="campo-menu">
                         <div class="icone-menu"><span class="material-icons size-icone-menu" id="align-icon">menu_book</span></div>
                         <div class="titulo-menu">Livros</div>
