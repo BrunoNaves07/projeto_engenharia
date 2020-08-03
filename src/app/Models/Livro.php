@@ -25,4 +25,12 @@ class Livro extends Model
     {
         return $this->belongsTo('App\Models\Autor', 'autor_id');
     }
+
+    /**
+     * Relacionamento de livro com editora.
+     */
+    public function editora()
+    {
+        return $this->belongsTo('App\Models\Editora', 'editora_id');
+    }
 }

@@ -29,3 +29,6 @@ Route::resource('/editoras', 'EditoraController');
 
 // ROTA DE LIVROS
 Route::resource('/livros', 'LivroController');
+
+// ROTA DE USUARIOS
+Route::resource('/usuarios', 'UsuarioController');

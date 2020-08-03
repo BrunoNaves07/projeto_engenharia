@@ -21,4 +21,12 @@ class Editora extends Model
         'email',
         'site',
     ];
+
+    /**
+     * Relacionamento de autor com livros.
+     */
+    public function livros()
+    {
+        return $this->hasMany('App\Models\Livro');
+    }
 }

@@ -6,7 +6,7 @@
         <hr>
         <div class="row">
             <div class="col">
-                <a class="link-menu" href="#">
+                <a class="link-menu" href="{{ url('/usuarios') }}">
                     <div class="campo-menu">
                         <div class="icone-menu"><span class="material-icons size-icone-menu" id="align-icon">person_add_alt_1</span></div>
                         <div class="titulo-menu">Usuários</div>
