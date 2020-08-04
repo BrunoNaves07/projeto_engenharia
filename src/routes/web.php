@@ -32,3 +32,6 @@ Route::resource('/livros', 'LivroController');
 
 // ROTA DE USUARIOS
 Route::resource('/usuarios', 'UsuarioController');
+
+// ROTA DE FUNCIONARIOS
+Route::resource('/funcionarios', 'FuncionarioController');

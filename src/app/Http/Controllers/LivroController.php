@@ -94,9 +94,11 @@ class LivroController extends Controller
      */
     public function edit($id)
     {
+        $autores = Autor::select('id', 'nome')->get();
+        $editoras = Editora::select('id', 'nome')->get();
         $titulo = "Editar Livro";
         $dados = $this->livro->find($id);
-        return view('editar_livro', compact('titulo', 'dados'));
+        return view('editar_livro', compact('titulo', 'dados', 'autores','editoras'));
     }
 
     /**
