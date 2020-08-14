@@ -54,14 +54,14 @@
                 </a>
             </div>
             <div class="col">
-                <a class="link-menu" href="#">
+                <a class="link-menu" href="{{ url('/vendas') }}">
                     <div class="campo-menu">
                         <div class="icone-menu"><span class="material-icons size-icone-menu" id="align-icon">shopping_cart</span></div>
                         <div class="titulo-menu">Vendas</div>
                     </div>
                 </a>
             </div>
-        </div>            
+        </div>
     </div>
 </div>
 @endsection

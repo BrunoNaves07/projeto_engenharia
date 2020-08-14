@@ -35,3 +35,12 @@ Route::resource('/usuarios', 'UsuarioController');
 
 // ROTA DE FUNCIONARIOS
 Route::resource('/funcionarios', 'FuncionarioController');
+
+// VENDA
+Route::resource('/vendas', 'VendaController');
+
+// REALIZAR VENDA
+Route::resource('realizarVendas', 'RealizarVendaController');
+
+// ITENS
+Route::resource('itens', 'ItemController');

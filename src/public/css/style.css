@@ -90,3 +90,9 @@ body {
     font-size: 24px;
     color: #333;
 }
+
+.total {
+    color: red !important;
+    font-weight: bold;
+    font-size: 36px !important;
+}
