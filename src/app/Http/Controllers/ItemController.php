@@ -14,6 +14,7 @@ class ItemController extends Controller
      */
     public function __construct(Iten $item)
     {
+        $this->middleware('auth');
         $this->item = $item;
     }
 

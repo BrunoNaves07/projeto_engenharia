@@ -5,6 +5,7 @@
         <div class="titulo-inicio"><span class="material-icons" id="align-icon">menu</span> Menu Sistema</div>
         <hr>
         <div class="row">
+            @if(Auth::user()->permissao != "funcionario")
             <div class="col">
                 <a class="link-menu" href="{{ url('/usuarios') }}">
                     <div class="campo-menu">
@@ -13,6 +14,7 @@
                     </div>
                 </a>
             </div>
+
             <div class="col">
                 <a class="link-menu" href="{{ url('/funcionarios') }}">
                     <div class="campo-menu">
@@ -21,6 +23,7 @@
                     </div>
                 </a>
             </div>
+            @endif
             <div class="col">
                 <a class="link-menu" href="{{ url('/clientes') }}">
                     <div class="campo-menu">

@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'HomeController@index');
 
 
 // ROTA DE CLIENTES
@@ -44,3 +47,5 @@ Route::resource('realizarVendas', 'RealizarVendaController');
 
 // ITENS
 Route::resource('itens', 'ItemController');
+
+

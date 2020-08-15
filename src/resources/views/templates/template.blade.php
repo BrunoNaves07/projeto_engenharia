@@ -34,7 +34,10 @@
                         <a class="nav-link font-branco" href="{{ url('/') }}"><span class="material-icons" id="align-icon">home</span> Início <span class="sr-only">(current)</span></a>
                     </li>
                     </ul>
-                    <button class="btn btn-outline-dark my-2 my-sm-0 font-branco" type="submit">Sair</button>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="margin-bottom: 0px; margin-top: 0px;">
+                        @csrf
+                        <button class="btn btn-outline-dark my-2 my-sm-0 font-branco" type="submit">Sair</button>
+                    </form>
                 </div>
             </nav>
         </div>

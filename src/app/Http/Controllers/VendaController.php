@@ -30,6 +30,7 @@ class VendaController extends Controller
      */
     public function __construct(Venda $venda, Cliente $cliente, Autor $autor, Editora $editora, Funcionario $funcionario, Usuario $usuario, Livro $livro, Iten $item)
     {
+        $this->middleware('auth');
         $this->venda = $venda;
         $this->cliente = $cliente;
         $this->autor = $autor;

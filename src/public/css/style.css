@@ -22,6 +22,7 @@ body {
 #align-icon {
     vertical-align: middle;
 }
+
 /* INICIO */
 .titulo-inicio {
     font-weight: 600;
@@ -96,3 +97,5 @@ body {
     font-weight: bold;
     font-size: 36px !important;
 }
+
+

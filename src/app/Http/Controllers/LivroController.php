@@ -16,6 +16,7 @@ class LivroController extends Controller
      * Construtor
      */
     public function __construct(Livro $livro) {
+        $this->middleware('auth');
         $this->livro = $livro;
     }
 

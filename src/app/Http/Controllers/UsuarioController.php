@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Usuario;
+use Illuminate\Support\Facades\Hash;
 
 class UsuarioController extends Controller
 {
@@ -13,6 +14,7 @@ class UsuarioController extends Controller
      * Construtor
      */
     public function __construct(Usuario $usuario) {
+        $this->middleware('auth');
         $this->usuario = $usuario;
     }
 
@@ -23,6 +25,10 @@ class UsuarioController extends Controller
      */
     public function index()
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         $titulo = "Usuários";
         $usuarios = $this->usuario->get();
         return view('usuarios', compact('titulo', 'usuarios'));
@@ -35,6 +41,10 @@ class UsuarioController extends Controller
      */
     public function create()
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         $titulo = "Cadastrar Usuário";
         return view('criar_usuario', compact('titulo'));
     }
@@ -47,11 +57,15 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         //dd($request);
         $dados = [
             'nome'         => $request->nome,
             'email'        => $request->email,
-            'password'     => $request->password,
+            'password'     => Hash::make($request->password),
             'permissao'    => $request->permissao,
         ];
 
@@ -73,6 +87,10 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         $titulo = "Detalhes do Usuário";
         $dados = $this->usuario->find($id);
         return view('view_usuario', compact('titulo', 'dados'));
@@ -86,6 +104,10 @@ class UsuarioController extends Controller
      */
     public function edit($id)
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         $titulo = "Editar Usuário";
         $dados = $this->usuario->find($id);
         return view('editar_usuario', compact('titulo', 'dados'));
@@ -100,10 +122,14 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         $dados = [
             'nome'         => $request->nome,
             'email'        => $request->email,
-            'password'     => $request->password,
+            'password'     => Hash::make($request->password),
             'permissao'    => $request->permissao,
         ];
 
@@ -126,6 +152,10 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
+        if (auth()->user()->permissao == "funcionario" ) {
+            return redirect('/');
+        }
+
         $find = $this->usuario->find($id);
 
         $delete = $find->delete();

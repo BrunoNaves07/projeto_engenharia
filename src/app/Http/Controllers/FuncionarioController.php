@@ -9,13 +9,14 @@ use Illuminate\Support\Facades\DB;
 
 class FuncionarioController extends Controller
 {
-    
+
     private $funcionario;
 
     /**
      * Construtor
      */
     public function __construct(Funcionario $funcionario) {
+        $this->middleware('auth');
         $this->funcionario = $funcionario;
     }
 

@@ -14,6 +14,7 @@ class EditoraController extends Controller
      * Construtor
      */
     public function __construct(Editora $editora) {
+        $this->middleware('auth');
         $this->editora = $editora;
     }
 
