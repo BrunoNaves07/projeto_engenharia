@@ -33,7 +33,7 @@
             @foreach($autores as $autor)
             <tr>
                 <th scope="row">{{ $autor->nome }}</th>
-                <td>{{ $autor->data_nascimento }}</td>
+                <td>{{ date('d/m/Y', strtotime($autor->data_nascimento)) }}</td>
                 <td><a href="{{ route('autores.show', $autor->id) }}"><button type="button" class="btn btn-success btn-sm">Ver</button></td></a>
                 <td><a href="{{ route('autores.edit', $autor->id) }}"><button type="button" class="btn btn-primary btn-sm">Editar</button></td></a>
                 <td>
