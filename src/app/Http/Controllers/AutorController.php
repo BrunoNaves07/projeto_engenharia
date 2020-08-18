@@ -13,6 +13,7 @@ class AutorController extends Controller
      * Construtor
      */
     public function __construct(Autor $autor) {
+        $this->middleware('auth');
         $this->autor = $autor;
     }
 

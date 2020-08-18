@@ -14,7 +14,7 @@ class UsuarioController extends Controller
      * Construtor
      */
     public function __construct(Usuario $usuario) {
-        //$this->middleware('auth');
+        $this->middleware('auth');
         $this->usuario = $usuario;
     }
 
