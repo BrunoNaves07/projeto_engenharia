@@ -34,7 +34,6 @@ MariaDB - Versão: 10.4.11
 
 # Definições de Pastas
 O armazenamento de arquivos referentes ao projeto, devem seguir as regras dispostas nesse documento, de forma a facilitar a sua localização.
-## Documentação
 <ul>
     <li>Toda a documentação referente ao projeto, tais como: Diagramas, Documentos de requisitos, imagens referente ao desenvolvimento devem ser colocados na pasta "Requisitos".</li>
     <li>Códigos (HTML, CSS, PHP, javascript) e imagens referente ao sistema em sí, deverão estar na pasta "src"</li>
