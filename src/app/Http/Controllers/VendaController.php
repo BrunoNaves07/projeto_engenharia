@@ -17,12 +17,9 @@ class VendaController extends Controller
 {
 
     private $cliente;
-    private $autor;
-    private $editora;
     private $funcionario;
     private $livro;
     private $venda;
-    private $usuario;
     private $item;
 
     /**
