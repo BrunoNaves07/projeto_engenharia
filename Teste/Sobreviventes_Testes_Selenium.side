@@ -1,0 +1,516 @@
+{
+  "id": "3f5e4da7-a69a-416c-b95d-f09a62b6f990",
+  "version": "2.0",
+  "name": "Sobreviventes",
+  "url": "http://localhost/sobreviventes/src/public/",
+  "tests": [{
+    "id": "5fa00752-b5d6-4f57-bcaa-ce0957138b11",
+    "name": "Novo Autor",
+    "commands": [{
+      "id": "b33386d1-c9af-4fbe-882f-d2da811a124b",
+      "comment": "",
+      "command": "open",
+      "target": "/sobreviventes/src/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7e1b1c6-3b1a-4948-9fe4-106011d0c3e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "997ec42c-efbe-40d1-98a7-ae08b081130b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(6) .titulo-menu",
+      "targets": [
+        ["css=.col:nth-child(6) .titulo-menu", "css:finder"],
+        ["xpath=//div[6]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d07ff148-b04f-4c34-865d-9bbbc32feaa6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Novo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68acd790-1f18-4b15-8e2b-312a696cebd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b7afdae-61fe-44b6-822c-a89e349d6c41",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ariano Suasuna"
+    }, {
+      "id": "e48101b9-101f-4849-9093-06125d36e12f",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_nascimento",
+      "targets": [
+        ["id=data_nascimento", "id"],
+        ["name=data_nascimento", "name"],
+        ["css=#data_nascimento", "css:finder"],
+        ["xpath=//input[@id='data_nascimento']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12294945-72e4-4af0-91df-e1a3902b8007",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_nascimento",
+      "targets": [
+        ["id=data_nascimento", "id"],
+        ["name=data_nascimento", "name"],
+        ["css=#data_nascimento", "css:finder"],
+        ["xpath=//input[@id='data_nascimento']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0001-06-16"
+    }, {
+      "id": "e6257875-68c6-47a3-b05c-266383c44256",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_nascimento",
+      "targets": [
+        ["id=data_nascimento", "id"],
+        ["name=data_nascimento", "name"],
+        ["css=#data_nascimento", "css:finder"],
+        ["xpath=//input[@id='data_nascimento']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0019-06-16"
+    }, {
+      "id": "0c338c5b-a063-4750-baf9-8df56c62ceb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_nascimento",
+      "targets": [
+        ["id=data_nascimento", "id"],
+        ["name=data_nascimento", "name"],
+        ["css=#data_nascimento", "css:finder"],
+        ["xpath=//input[@id='data_nascimento']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "0192-06-16"
+    }, {
+      "id": "c919bfa2-e269-4ccb-91e7-699e4a27b64e",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_nascimento",
+      "targets": [
+        ["id=data_nascimento", "id"],
+        ["name=data_nascimento", "name"],
+        ["css=#data_nascimento", "css:finder"],
+        ["xpath=//input[@id='data_nascimento']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1927-06-16"
+    }, {
+      "id": "aba1cb75-c4f5-40da-b498-70b42413dcdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc448701-b49e-488e-a96e-3c9a65f1861d",
+    "name": "Editar Autor",
+    "commands": [{
+      "id": "cdfbf621-696e-495b-866c-b2dfa78b8d62",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/sobreviventes/src/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b9e3849-807e-4230-8dc7-e7b931fe6eee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17d485f3-22fc-45e5-919a-a1cfa41a7f04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(6) .titulo-menu",
+      "targets": [
+        ["css=.col:nth-child(6) .titulo-menu", "css:finder"],
+        ["xpath=//div[6]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec897a0-2acc-4eeb-bb26-172e8ed71185",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .btn-primary",
+      "targets": [
+        ["css=tr:nth-child(5) .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[12]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[5]/td[3]/a/button", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15095d34-d610-4731-b5b8-7a165a79db0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91b2c775-a33e-4956-ad05-fdfd31ebf77e",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ariano Suassuna"
+    }, {
+      "id": "16b7cfd3-1366-47fb-a5d4-69c70959589d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a87ee403-66dc-4d5b-a634-81a72690fc5d",
+    "name": "Visualizar Venda",
+    "commands": [{
+      "id": "4cc0d43a-f2bc-4617-916f-5a94a3e31d29",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/sobreviventes/src/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ca0f976-c104-40b6-a5a5-27830eddc475",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83509686-b27f-4e14-bfe6-6a065c76afff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(7) .titulo-menu",
+      "targets": [
+        ["css=.col:nth-child(7) .titulo-menu", "css:finder"],
+        ["xpath=//div[7]/a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e3d2202-c650-4016-b7c2-5596b93820dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td[2]/a/button", "xpath:idRelative"],
+        ["xpath=//td[2]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4b20f4c7-afe7-4df3-b890-f59efe495977",
+    "name": "Novo Livro",
+    "commands": [{
+      "id": "06ac5adb-33d0-4ad7-aea8-f5a41e5da8f2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/sobreviventes/src/public/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0da8fea4-16b8-4648-97b2-ba7c4f616c1c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bcec7ba-c517-4250-9b36-19edcb876839",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4) #align-icon",
+      "targets": [
+        ["css=.col:nth-child(4) #align-icon", "css:finder"],
+        ["xpath=(//span[@id='align-icon'])[6]", "xpath:attributes"],
+        ["xpath=//div[4]/a/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'menu_book')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3384f8cc-5efa-48d9-8e21-71c1be05ece6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Novo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccea9567-7932-4849-b7ff-6b1e6feaebf7",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d094d33-3e51-49cf-bd7b-2ee2e67600c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Deuses Americanos"
+    }, {
+      "id": "265076a4-9150-40a7-8a9c-db2494ff21be",
+      "comment": "",
+      "command": "type",
+      "target": "id=isbn",
+      "targets": [
+        ["id=isbn", "id"],
+        ["name=isbn", "name"],
+        ["css=#isbn", "css:finder"],
+        ["xpath=//input[@id='isbn']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "a3be5c49-3acc-45fe-a125-b5b64d9ce0dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=autor_id",
+      "targets": [
+        ["id=autor_id", "id"],
+        ["name=autor_id", "name"],
+        ["css=#autor_id", "css:finder"],
+        ["xpath=//select[@id='autor_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "429ccc6e-c688-4d79-ab28-bc6185d0b90c",
+      "comment": "",
+      "command": "select",
+      "target": "id=autor_id",
+      "targets": [],
+      "value": "label=Neil Gaiman"
+    }, {
+      "id": "3033ca4a-dc61-4181-9392-c0f60619eafe",
+      "comment": "",
+      "command": "click",
+      "target": "id=autor_id",
+      "targets": [
+        ["id=autor_id", "id"],
+        ["name=autor_id", "name"],
+        ["css=#autor_id", "css:finder"],
+        ["xpath=//select[@id='autor_id']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2807534c-aa15-463e-bb2b-e7c7afe30fa5",
+      "comment": "",
+      "command": "click",
+      "target": "id=editora_id",
+      "targets": [
+        ["id=editora_id", "id"],
+        ["name=editora_id", "name"],
+        ["css=#editora_id", "css:finder"],
+        ["xpath=//select[@id='editora_id']", "xpath:attributes"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c4a6f0c-ac46-4521-aff0-5494ca615d9d",
+      "comment": "",
+      "command": "select",
+      "target": "id=editora_id",
+      "targets": [],
+      "value": "label=Aleph"
+    }, {
+      "id": "2c9ca3b8-ed01-4b8e-9597-ac4a4d11e1c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=editora_id",
+      "targets": [
+        ["id=editora_id", "id"],
+        ["name=editora_id", "name"],
+        ["css=#editora_id", "css:finder"],
+        ["xpath=//select[@id='editora_id']", "xpath:attributes"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01e84988-b2ca-4b7c-aaf2-fcbc36753487",
+      "comment": "",
+      "command": "click",
+      "target": "id=edicao",
+      "targets": [
+        ["id=edicao", "id"],
+        ["name=edicao", "name"],
+        ["css=#edicao", "css:finder"],
+        ["xpath=//input[@id='edicao']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd9580f0-bbbb-44e8-a23f-f2ae6fc8efec",
+      "comment": "",
+      "command": "type",
+      "target": "id=edicao",
+      "targets": [
+        ["id=edicao", "id"],
+        ["name=edicao", "name"],
+        ["css=#edicao", "css:finder"],
+        ["xpath=//input[@id='edicao']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "9b4d2927-638a-4967-b176-f93f08156064",
+      "comment": "",
+      "command": "click",
+      "target": "id=ano",
+      "targets": [
+        ["id=ano", "id"],
+        ["name=ano", "name"],
+        ["css=#ano", "css:finder"],
+        ["xpath=//input[@id='ano']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57b4ae1d-9359-4c2d-b5a1-5ffca0c3fc8c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ano",
+      "targets": [
+        ["id=ano", "id"],
+        ["name=ano", "name"],
+        ["css=#ano", "css:finder"],
+        ["xpath=//input[@id='ano']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1998"
+    }, {
+      "id": "2eeba62a-6a24-4a7d-a5e1-a3b7e4041750",
+      "comment": "",
+      "command": "click",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["name=preco", "name"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b2f9f2b-3089-4d7b-9cd2-5cd33c2ae93a",
+      "comment": "",
+      "command": "type",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["name=preco", "name"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "0250c7e0-3946-4ee2-8f1d-d83fd493dcee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fc388629-7a99-4a02-bea5-3733f97add9b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5fa00752-b5d6-4f57-bcaa-ce0957138b11"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/sobreviventes/src/public/"],
+  "plugins": []
+}
