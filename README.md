@@ -7,16 +7,25 @@ Os Sobreviventes empresa de desenvolvimento de softwares ficará responsável pe
 
 # Tecnologias Utilizadas
 
-## Framework Front-End
-Bootstrap - Versão: 4.5
+## Front-End
+<ul>
+    <li>Bootstrap - Versão: 4.5</li>
+    <li>HTML5</li>
+    <li>CCS3</li>
+</ul>
+
 ###### Link: Bootstrap
 https://getbootstrap.com/
+
 ## Linguagens de Script
 PHP - Versão: 7.4.5
+
 ## Framework Back-End
 Laravel - Versão: 7
+
 ###### Link: Laravel
 https://laravel.com/
+
 ## Servidor
 Apache - Versão: 2.4.43
 ## Banco de Dados
