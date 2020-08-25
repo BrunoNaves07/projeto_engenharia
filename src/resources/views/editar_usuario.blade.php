@@ -26,13 +26,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nome</label>
+                        <label for="exampleInputEmail1">Nome<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="nome" name="nome" value="{{ $dados->nome }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
+                        <label for="exampleInputEmail1">Email<span style="color: red">*</span></label>
                         <input type="email" class="form-control" id="email" name="email" value="{{ $dados->email }}">
                     </div>
                 </div>
@@ -40,13 +40,13 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Senha</label>
+                        <label for="exampleInputEmail1">Senha<span style="color: red">*</span></label>
                         <input type="password" class="form-control" id="password" name="password" value="{{ $dados->password }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Permissão</label>
+                        <label for="exampleInputEmail1">Permissão<span style="color: red">*</span></label>
                         <select class="form-control" id="permissao" name="permissao" value="{{ $dados->permissao }}">
                             <option value="administrador">Administrador</option>
                             <option value="funcionario">Funcionário</option>

@@ -25,13 +25,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nome</label>
+                        <label for="exampleInputEmail1">Nome <span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Data de nascimento</label>
+                        <label for="exampleInputEmail1">Data de nascimento <span style="color: red">*</span></label>
                         <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="00/00/0000">
                     </div>
                 </div>

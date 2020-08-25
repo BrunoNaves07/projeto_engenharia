@@ -26,13 +26,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Título</label>
+                        <label for="exampleInputEmail1">Título<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="titulo" name="titulo" value="{{ $dados->titulo }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">ISBN</label>
+                        <label for="exampleInputEmail1">ISBN<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="isbn" name="isbn" value="{{ $dados->isbn }}">
                     </div>
                 </div>
@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Autor</label>
+                        <label for="exampleInputEmail1">Autor<span style="color: red">*</span></label>
                         <select class="form-control" id="autor_id" name="autor_id">
                             <option selected disabled hidden style='display: none' value=''></option>
                             @foreach ($autores->all() as $autor)
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Editora</label>
+                        <label for="exampleInputEmail1">Editora<span style="color: red">*</span></label>
                         <select class="form-control" id="editora_id" name="editora_id">
                         <option selected disabled hidden style='display: none' value=''></option>
                             @foreach ($editoras->all() as $editora)
@@ -64,13 +64,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Edição</label>
+                        <label for="exampleInputEmail1">Edição<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="edicao" name="edicao" value="{{ $dados->edicao }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Ano</label>
+                        <label for="exampleInputEmail1">Ano<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="ano" name="ano" value="{{ $dados->ano }}">
                     </div>
                 </div>
@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Preço</label>
+                        <label for="exampleInputEmail1">Preço<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="preco" name="preco" value="{{ $dados->preco }}">
                     </div>
                 </div>

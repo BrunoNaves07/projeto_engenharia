@@ -26,14 +26,14 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nome</label>
+                        <label for="exampleInputEmail1">Nome<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="nome" name="nome" value="{{ $dados->usuario->nome }}" disabled>
                         <input type="hidden" class="form-control" id="user_id" name="user_id" value="{{ $dados->usuario->id }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Cargo</label>
+                        <label for="exampleInputEmail1">Cargo<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="cargo" name="cargo" value="{{ $dados->cargo }}">
                     </div>
                 </div>
@@ -41,13 +41,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Logradouro</label>
+                        <label for="exampleInputEmail1">Logradouro<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="logradouro" name="logradouro" value="{{ $dados->logradouro }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Número</label>
+                        <label for="exampleInputEmail1">Número<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="numero" name="numero" value="{{ $dados->numero }}">
                     </div>
                 </div>
@@ -55,13 +55,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Bairro</label>
+                        <label for="exampleInputEmail1">Bairro<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="bairro" name="bairro" value="{{ $dados->bairro }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">CEP</label>
+                        <label for="exampleInputEmail1">CEP<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="cep" name="cep" value="{{ $dados->cep }}">
                     </div>
                 </div>
@@ -69,19 +69,19 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Cidade</label>
+                        <label for="exampleInputEmail1">Cidade<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="cidade" name="cidade" value="{{ $dados->cidade }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Estado</label>
+                        <label for="exampleInputEmail1">Estado<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="estado" name="estado" value="{{ $dados->estado }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Telefone</label>
+                        <label for="exampleInputEmail1">Telefone<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="telefone" name="telefone" value="{{ $dados->telefone }}">
                     </div>
                 </div>

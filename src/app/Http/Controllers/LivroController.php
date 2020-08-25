@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Livro;
 use App\Models\Autor;
 use App\Models\Editora;
+use App\Http\Requests\LivroRequest;
 
 class LivroController extends Controller
 {
@@ -51,7 +52,7 @@ class LivroController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LivroRequest $request)
     {
         //dd($request);
         $dados = [
@@ -109,7 +110,7 @@ class LivroController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(LivroRequest $request, $id)
     {
         $dados = [
             'ano'        => $request->ano,

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Funcionario;
-use App\Models\Usuario;
+use App\Http\Requests\FuncionarioRequest;
 use Illuminate\Support\Facades\DB;
 
 class FuncionarioController extends Controller
@@ -56,7 +56,7 @@ class FuncionarioController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FuncionarioRequest $request)
     {
         //dd($request);
         $dados = [
@@ -114,7 +114,7 @@ class FuncionarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(FuncionarioRequest $request, $id)
     {
         $dados = [
             'cargo'              => $request->cargo,

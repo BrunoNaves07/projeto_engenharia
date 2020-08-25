@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cliente;
+use App\Http\Requests\ClienteRequest;
 
 class ClienteController extends Controller
 {
@@ -47,7 +48,7 @@ class ClienteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ClienteRequest $request)
     {
         //dd($request);
         $dados = [
@@ -106,7 +107,7 @@ class ClienteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ClienteRequest $request, $id)
     {
         $dados = [
             'nome'       => $request->nome,

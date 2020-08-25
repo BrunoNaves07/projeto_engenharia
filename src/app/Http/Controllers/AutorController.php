@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Autor;
+use App\Http\Requests\AutorRequest;
 
 class AutorController extends Controller
 {
@@ -46,7 +47,7 @@ class AutorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AutorRequest $request)
     {
         //dd($request);
         $dados = [
@@ -97,7 +98,7 @@ class AutorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(AutorRequest $request, $id)
     {
         $dados = [
             'nome'                   => $request->nome,

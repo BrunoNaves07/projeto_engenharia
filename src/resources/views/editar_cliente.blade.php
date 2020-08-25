@@ -26,13 +26,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nome</label>
+                        <label for="exampleInputEmail1">Nome<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="nome" name="nome" value="{{ $dados->nome }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">CPF</label>
+                        <label for="exampleInputEmail1">CPF<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="cpf" name="cpf" value="{{ $dados->cpf }}">
                     </div>
                 </div>
@@ -40,13 +40,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Logradouro</label>
+                        <label for="exampleInputEmail1">Logradouro<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="logradouro" name="logradouro" value="{{ $dados->logradouro }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Número</label>
+                        <label for="exampleInputEmail1">Número<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="numero" name="numero" value="{{ $dados->numero }}">
                     </div>
                 </div>
@@ -54,13 +54,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Bairro</label>
+                        <label for="exampleInputEmail1">Bairro<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="bairro" name="bairro" value="{{ $dados->bairro }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">CEP</label>
+                        <label for="exampleInputEmail1">CEP<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="cep" name="cep" value="{{ $dados->cep }}">
                     </div>
                 </div>
@@ -68,19 +68,19 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Cidade</label>
+                        <label for="exampleInputEmail1">Cidade<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="cidade" name="cidade" value="{{ $dados->cidade }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Estado</label>
+                        <label for="exampleInputEmail1">Estado<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="estado" name="estado" value="{{ $dados->estado }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Telefone</label>
+                        <label for="exampleInputEmail1">Telefone<span style="color: red">*</span></label>
                         <input type="text" class="form-control" id="telefone" name="telefone" value="{{ $dados->telefone }}">
                     </div>
                 </div>
@@ -88,7 +88,7 @@
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
+                        <label for="exampleInputEmail1">Email<span style="color: red">*</span></label>
                         <input type="email" class="form-control" id="email" name="email" value="{{ $dados->email }}"aria-describedby="emailHelp">
                     </div>
                 </div>
